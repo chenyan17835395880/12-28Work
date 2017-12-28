@@ -1,0 +1,22 @@
+new Vue({
+    el:'.search',
+    data:{
+        datas:[
+            {id:1,value:'111'},
+            {id:2,value:'222'},
+            {id:3,value:'aaa'},
+            {id:4,value:'ddd'}
+        ],
+        value:'',
+        flag:false,
+    },
+    methods:{
+        focus(){
+            this.flag=true;
+        },
+        click(value){
+            this.value=value;
+            this.flag=false;
+        }
+    }
+})
